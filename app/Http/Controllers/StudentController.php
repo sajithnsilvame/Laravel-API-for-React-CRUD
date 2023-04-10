@@ -39,7 +39,7 @@ class StudentController extends Controller
         { 
             return response()->json([
                 'status' => 422,
-                'errors' => $validate->message()
+                'errors' => $validate->messages()
             ],422);
         }
         else
